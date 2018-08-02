@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\Cocina"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\Cocina\\cocina.component.html",
+  "SelectedNode": "\\src\\app",
   "PreviewInSolutionExplorer": false
 }

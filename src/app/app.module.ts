@@ -15,8 +15,6 @@ import { DormitorioComponent } from './Dormitorio/dormitorio.component';
 import { CocinaComponent } from './Cocina/cocina.component';
 import { LivingComponent } from './Living/living.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +26,7 @@ import { LivingComponent } from './Living/living.component';
     LivingComponent
   ],
   imports: [
+    
     BrowserModule,
     FormsModule,
     HttpModule,    

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { map } from 'rxjs/operators';
 
@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./cocina.component.css']
 })
 
-export class CocinaComponent implements OnInit {
+export class CocinaComponent {
 
   showNavigationArrows = false;
   showNavigationIndicators = false;
@@ -37,17 +37,17 @@ export class CocinaComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {   
-    this._randomImageUrls(this.images);
-  }
+  //ngOnInit() {
+  //  this._randomImageUrls(this.images);
+  //}
 
-  private _randomImageUrls(images: Array<{ id: number }>): Array<string> {
-    return [1, 2].map(() => {
-      const randomId = images[Math.floor(Math.random() * images.length)].id;
-      return randomId.toString();
-    });
+  //private _randomImageUrls(images: Array<{ id: number }>): Array<string> {
+  //  return [1, 2, 3].map(() => {
+  //    const randomId = images[Math.floor(Math.random() * images.length)].id;
+  //    return randomId.toString();
+  //  });
 
-  }
+  //}
 
 }
 
@@ -56,7 +56,7 @@ export class CocinaElement {
   name: string;
   img: string;
 
-  constructor(name:string, img: string) {
+  constructor(name: string, img: string) {
 
     this.name = name;
     this.img = img;
@@ -64,4 +64,3 @@ export class CocinaElement {
   }
 
 }
-
